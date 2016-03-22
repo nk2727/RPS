@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		BB5B1C961CA1CB6000D06CD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1C951CA1CB6000D06CD4 /* AppDelegate.swift */; };
-		BB5B1C981CA1CB6000D06CD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1C971CA1CB6000D06CD4 /* ViewController.swift */; };
+		BB5B1C981CA1CB6000D06CD4 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1C971CA1CB6000D06CD4 /* PlayViewController.swift */; };
 		BB5B1C9B1CA1CB6000D06CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5B1C991CA1CB6000D06CD4 /* Main.storyboard */; };
 		BB5B1C9D1CA1CB6000D06CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5B1C9C1CA1CB6000D06CD4 /* Assets.xcassets */; };
 		BB5B1CA01CA1CB6000D06CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5B1C9E1CA1CB6000D06CD4 /* LaunchScreen.storyboard */; };
 		BB5B1CAB1CA1CB6000D06CD4 /* RPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1CAA1CA1CB6000D06CD4 /* RPSTests.swift */; };
 		BB5B1CB61CA1CB6000D06CD4 /* RPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1CB51CA1CB6000D06CD4 /* RPSUITests.swift */; };
+		BB5B1CC41CA1D10400D06CD4 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5B1CC31CA1D10400D06CD4 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		BB5B1C921CA1CB6000D06CD4 /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5B1C951CA1CB6000D06CD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB5B1C971CA1CB6000D06CD4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB5B1C971CA1CB6000D06CD4 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		BB5B1C9A1CA1CB6000D06CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB5B1C9C1CA1CB6000D06CD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB5B1C9F1CA1CB6000D06CD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		BB5B1CB11CA1CB6000D06CD4 /* RPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5B1CB51CA1CB6000D06CD4 /* RPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSUITests.swift; sourceTree = "<group>"; };
 		BB5B1CB71CA1CB6000D06CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5B1CC31CA1D10400D06CD4 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				BB5B1C951CA1CB6000D06CD4 /* AppDelegate.swift */,
-				BB5B1C971CA1CB6000D06CD4 /* ViewController.swift */,
+				BB5B1C971CA1CB6000D06CD4 /* PlayViewController.swift */,
+				BB5B1CC31CA1D10400D06CD4 /* ResultsViewController.swift */,
 				BB5B1C991CA1CB6000D06CD4 /* Main.storyboard */,
 				BB5B1C9C1CA1CB6000D06CD4 /* Assets.xcassets */,
 				BB5B1C9E1CA1CB6000D06CD4 /* LaunchScreen.storyboard */,
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5B1C981CA1CB6000D06CD4 /* ViewController.swift in Sources */,
+				BB5B1C981CA1CB6000D06CD4 /* PlayViewController.swift in Sources */,
 				BB5B1C961CA1CB6000D06CD4 /* AppDelegate.swift in Sources */,
+				BB5B1CC41CA1D10400D06CD4 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 				BB5B1CBC1CA1CB6000D06CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB5B1CBD1CA1CB6000D06CD4 /* Build configuration list for PBXNativeTarget "RPSTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				BB5B1CBF1CA1CB6000D06CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB5B1CC01CA1CB6000D06CD4 /* Build configuration list for PBXNativeTarget "RPSUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				BB5B1CC21CA1CB6000D06CD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
