@@ -25,27 +25,27 @@ class ResultsViewController: UIViewController {
         case "Rock" :
 
             if appShape == "Rock" {
-                resultsLabel.text = "App picked Rock - It's a tie"
+                resultsLabel.text = "App picked \(appShape)- It's a tie"
                 //resultsImage.image=UIImage(named: "          }
                 
             } else if appShape == "Paper" {
-                resultsLabel.text = "App picked Paper - you lose"
+                resultsLabel.text = "App picked \(appShape) - you lose"
                 
             } else {
-                resultsLabel.text = "App picked Scissor - you win"
+                resultsLabel.text = "App picked \(appShape) - you win"
                 
             }
             
         case "Paper" :
             if appShape == "Rock" {
-                resultsLabel.text = "App picked \"(appShape - you lose"
+                resultsLabel.text = "App picked \(appShape) - you lose"
                 //resultsImage.image=UIImage(named: "          }
                 
             } else if appShape == "Paper" {
-                resultsLabel.text = "App picked \"(appShape - It's tie"
+                resultsLabel.text = "App picked \(appShape)- It's tie"
                 
             } else {
-                resultsLabel.text = "App picked \"(appShape - you win"
+                resultsLabel.text = "App picked \(appShape) - you win"
             }
         default:
             //
@@ -53,14 +53,14 @@ class ResultsViewController: UIViewController {
             //
     
             if appShape == "Rock" {
-                resultsLabel.text = "App picked \"(appShape) - you lose"
+                resultsLabel.text = "App picked \(appShape) - you lose"
                 //resultsImage.image=UIImage(named: "          }
                 
             } else if appShape == "Paper" {
-                resultsLabel.text = "App picked \"(appShape) - you win"
+                resultsLabel.text = "App picked \(appShape) - you win"
                 
             } else {
-                resultsLabel.text = "App picked \"(appShape) - it's tie"
+                resultsLabel.text = "App picked \(appShape) - it's tie"
             }
     
         }

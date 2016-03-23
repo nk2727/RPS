@@ -42,6 +42,8 @@ class PlayViewController: UIViewController {
 
     @IBAction func pickRock(sender: UIButton) {
        
+        // 
+        // implement code only
         //
         // get a ResultsViewController
         // UserShape, appShape are properties
@@ -53,4 +55,37 @@ class PlayViewController: UIViewController {
 
        self.presentViewController(controller, animated: true, completion: nil)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "Scissors" {
+            if let destinationVC = segue.destinationViewController as? ResultsViewController{
+                //
+                // destinationVC.userShape = "Paper"
+                destinationVC.userShape = "Scissors"
+                destinationVC.appShape=randomShape()
+            }
+        }
+        
+    }
+    
+    @IBAction func pickPaper(sender: UIButton) {
+        
+        //
+        // implement code and segue
+        // a modal seque was created between PlayViewController and ResultsViewController on the StoryBoard
+        // its identity is set to "ResultsView"
+        //
+        // prepareForSegue is called to send values in the upcoming view
+        //
+        
+        performSegueWithIdentifier("ResultsView", sender: self)
+    }
+    
+    //
+    // the Scissors choice will be impelemented directly with segue
+    // 1. the segue "ResultsView" between to "Play View Controller" and "Results View Controller" on the main Storyboard
+    //    will be removed
+    // 2. a new segue "Scissors" is created from UIButton Scissors directly to the ResultsViewController
+    
+    
 }
